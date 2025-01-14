@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SeruEat</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <style type="text/css" media="all">
+.bg-abstrack {
+    background-color: rgba(255,255,255,0.4);
+}
+.text-primary {
+    color: #FEA116 !important;
+}
+.ff-secondary {
+    font-family: 'Pacifico', cursive;
+}
+
+.fw-medium {
+    font-weight: 600 !important;
+}
+.mb-0 .fs5 .fw-bold {
+    font-size: 1rem !important;
+}
+.fw-semi-bold {
+    font-weight: 700 !important;
+}
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(assets/bg)!important;
+
+}
+
+.navbor a {
+    color: orangered !important;
+}
+.navbor a:hover{
+    font-weight:700 !important;
+    color: orangered !important;
+    transition: 0.5s !important;
+    
+}
+#testi {
+    background-color: rgba (255,255,255,0.9);
+}
+.testi {
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.testimonial-rating {
+    margin-bottom: 40px;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #ffd700;
+    color: #000000;
+    border-color: #ffd700;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+    background-color: #FEA116;
+    border-color: beige;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-secondary:hover {
+    background-color: orangered;
+    color: #FFFFFF !important;
+    border-color: #FFD700;
+    transition: 0.5s;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.navbar {
+    transition: top 1.3s;
+}
+
+.navbar a {
+    font-weight: 1000 !important;
+    font-size: 18px !important;
+}
+
+.navbar .navbar-nav .navbar-dark .navbar-item a:active {
+    color: gold !important;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: orangered !important; 
+}
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 2px;
+}
+
+
+.navbar {
+    transition: top 1.3s;
+}
+.navbar-item:active {
+    color: gold;
+}
+.fixed-top {
+    transition: 1.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #262926;
+}
+
+.navbar-dark {
+    background-color: #565f6b !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    position: relative;
+    margin-left: 25px;
+    padding: 35px 0;
+    font-size: 17px;
+    color: #F1F8FF !important;
+    text-transform: uppercase;
+    font-weight: 800;
+    outline: none;
+    transition: color 0.5s, padding 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:active {
+    color: gold !important;
+    font-weight: 1000;
+}
+
+.navbar-dark .navbar-brand img {
+    max-height: 60px;
+    transition: max-height 0.5s;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    padding: 20px 0;
+}
+
+.sticky-top.navbar-dark .navbar-brand img {
+    max-height: 45px;
+}
+.carousel-inner {
+    position: relative;
+    padding: 20px;
+}
+.carousel-inner :hover{
+    color: #FEA116;
+    font-weight: 600;
+}
+
+.carousel-indicators {
+    bottom: 10px;
+    padding-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: #FEA116;
+    border: 2px;
+    border-radius: 25px;
+    list-style: none;
+}
+
+.carousel-indicators button {
+    background-color: #000000;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    width: 20px;
+    height: 8px;
+    opacity: 0.5;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+.testi {
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.testibor {
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s !important;
+}
+
+.testibor:hover {
+    transition: all 0.5s;
+    background-color: rgba(254, 161, 22, 0.65);
+    color: white !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.testibor:hover * {
+    color: white !important;
+}
+
+.testibor:hover h1 {
+    color: orangered !important;
+}
+
+.testimonial-carousel .carousel-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.testi .testibor p:hover {
+    font-weight: 600;
+    transition: font-weight 0.2s ease-in-out;
+}
+
+.testimonial-rating {
+    margin-bottom: 40px;
+}
+
+.testimonial-position {
+    margin-bottom: 40px;
+}
+
+.testi .testimonial-author:hover {
+    font-weight: 700;
+    transition: font-weight 0.2s ease-in-out;
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    transition: all 0.5s; /* Smooth transition for all properties */
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    visibility: hidden;
+}
+
+.testimonial-text {
+    font-size: 1.4rem !important;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+    transition: color 0.5s ease-in-out;
+}
+
+.testimonial-author {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    transition: color 0.5s ease-in-out;
+}
+
+.testimonial-position {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    transition: color 0.5s ease-in-out;
+}
+
+.testimonial-rating {
+    font-size: 1.8rem;
+    color: #ffd700;
+    transition: color 0.5s ease-in-out;
+}
+
+.star {
+    margin: 0 2px;
+    transition: color 0.5s ease-in-out;
+}
+
+
+
+.hero-header {
+    background: linear-gradient(rgba(51, 50, 50, 0.9), rgba(0, 0, 0, 0.7)), 
+    url(https://i.imgur.com/j3HmqZ7.jpeg) no-repeat center center/cover !important;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.hero-header .container-xxl {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero-header .row {
+    margin: 0;
+    width: 100%;
+}
+
+.hero-header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: orangered;
+    padding-bottom: 50px;
+}
+
+.hero-header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 550 !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner {
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+
+.carousel-inner:hover {
+    color: #FEA116;
+    font-weight: 600;
+}
+
+.hero-header img {
+    animation: imgRotate 50s linear infinite;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes imgRotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.highlight {
+    color: #FEA116;
+}
+
+#about p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+#about p:hover {
+    font-weight: 700;
+}
+#about .konten {
+    background-color: rgba(255,255,255, 0.08);
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    border-radius: 15px;
+    margin: 8px 0;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+#about .konten:hover {
+    background-color: rgba(254, 161, 22, 0.65);
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    color: white !important;
+}
+
+#about .desk:hover {
+    font-weight: 700 !important;
+    border-radius: 10px;
+    padding: 10px;
+    margin:-10px;
+    box-sizing: border-box;
+
+}
+#faq p, .testi p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+#kontak {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 40px !important;
+    padding: 4rem 2rem;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+#kontak:hover {
+    background-color: rgba(254, 161, 22, 0.65) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    color: white !important;
+}
+
+#kontak:hover * {
+    color: white !important;
+}
+
+#kontak h1 {
+    color: orangered;
+}
+
+#kontak h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    color: orangered;
+    font-weight: 600;
+}
+
+#kontak h3 {
+    font-size: 23px;
+    font-weight: 800;
+    color: darkorange !important;
+}
+
+#kontak p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 0rem;
+    padding-bottom: 5px;
+}
+
+#kontak:hover h2 {
+    color: orangered !important;
+}
+
+#kontak:hover h3, #kontak:hover p {
+    color: white !important;
+}
+
+#kontak:hover h1 {
+    color: orangered !important;
+}
+
+
+
+
+#about h3{
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    color: orangered !important;
+}
+#about h1, #menu h1, #faq h1, .about-section h1{
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: orangered;
+    font-weight: 600;
+}
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    background-color: rgba(255,255,255, 0.58);
+    transition: .5s;
+}
+
+.service-item:hover {
+    background-color: #FEA116;
+}
+
+.service-item * {
+    transition: .5s;
+}
+#faq p, .testi p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.service-item:hover * {
+    color: white !important;
+}
+.nav-item {
+    padding-bottom: 7px;
+    width: 150px;
+}
+.navbar-item{
+    padding-bottom: 7px;
+}
+.bg-gradient {
+    background: radial-gradient(circle at 10% 50%, 
+                rgba(255, 166, 0, 0.11) 40%, 
+                rgba(187, 57, 10, 0.103) 80%, 
+                rgba(255, 166, 0, 0.096)) !important;
+}
+.menu .tab-class .nav-item a.active {
+    background: #FEA116 !important;
+    color: white !important;
+    font-weight: 700;
+}
+
+.menu .tab-class .nav-item a.active span {
+    color: white !important; 
+}
+
+.menu .menu-categorie .menu-name {
+    line-height: 40px;
+}
+
+.menu .menu-categorie .menu-name a {
+    transition: 0.5s;
+}
+
+.menu .menu-categorie .menu-name a:hover {
+    color: white !important;
+}
+
+.testimonial-carousel .carousel-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.testimonial-position {
+    font-size: 1rem !important;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.testimonial-rating {
+    font-size: 1.5rem;
+    color: #ffd700;
+}
+
+.star {
+    margin: 0 2px;
+}
+.accordion-button {
+    background-color: #FFFFFF;
+    color: darkorange;
+    border: 1px solid orange;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 1.1rem;
+}
+
+.accordion-button::after {
+    font-weight: 900;
+    color: #FEA116 !;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+    
+    background-color: #FEA116;
+    border-color:darkorange;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.accordion-button:focus {
+    outline: none;
+    box-shadow:none;
+    border-color: #FEA116;
+}
+.accordion-button i {
+    margin-right: 0.5em;
+    transition: transform 0.3s;
+}
+
+.accordion-button:hover {
+    font-weight: 600;
+    background-color: rgba (200,200,200,0.3) !important;
+    transition: 0.3s;
+}
+.accordion-button::after {
+    color: darkorange;
+    font-weight: 600;
+    
+}
+
+.accordion-item {
+    background-color: orangered;
+    color: #FFFFFF;
+    margin-right: 0.5rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+}
+.accordion-item:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+.carousel-item {
+    text-align: center;
+  }
+  .testimonial-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .rating {
+    color: #f39c12;
+  }
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+    border: 1px solid #ddd;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 576px) {
+    .map-container {
+        padding-bottom: 100%;
+    }
+    #about p, #faq p, .testi p {
+        font-size: 16px; /* Ukuran font lebih besar untuk layar kecil */
+    }
+    .paddingkungkang {
+        margin-top: -140px !important;
+    }
+    #about h3 {
+        font-size: 20px !important;
+    }
+    #about h1, #menu h1, #faq h1, .about-section h1 {
+        font-size: 1.8rem;
+    }
+    #kontak h2 {
+        font-size: 25px;
+        padding-top:25px;
+    }
+    .spinner-grow {
+        width: 20rem !important;
+        height: 20rem !important;
+    }
+    .splash-screen img {
+        max-width: 10rem !important;
+    }
+    .imageheader {
+        width: 200px;
+        overflow: hidden;
+    }
+        .hero-header h1 {
+        font-size: 2.5rem;
+        padding-bottom: 30px;
+    }
+    .hero-header p {
+        font-size: 1.2rem;
+    }
+    .hero-header {
+        padding: 2rem 0;
+    }
+    #faq .desk {
+        font-size: 1.5rem !important;
+    }
+    .testi .desk {
+        font-size: 1.5rem !important;
+    }
+    .testimonial-text {
+        font-size: 1rem !important;
+    }
+    #about h1, #menu h1, #faq h1, .about-section h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Untuk Tablet (810px x 1080px) */
+@media (min-width: 577px) and (max-width: 1024px) {
+    .map-container {
+        padding-bottom: 75%;
+    }
+    .hero-header h1 {
+        font-size: 4.5rem;
+        padding-bottom: 30px;
+    }
+    .hero-header p {
+        font-size: 2.5rem;
+    }
+    .hero-header {
+        padding: 2rem 0;
+    }
+    .carousel-inner {
+        padding: 0 10px;
+    }
+    #about p, #faq p, .testi p {
+        font-size: 18px;
+    }
+    .testimonial-text {
+        font-size: 1.7rem !important;
+    }
+    .testi .desk {
+        font-size: 1.6rem !important;
+    }
+    #about h3 {
+        font-size: 30px !important;
+    }
+    #about h1, #menu h1, #faq h1, .about-section h1 {
+        font-size: 2.5rem !important;
+    }
+    .testi h1 {
+        font-size: 2.5rem !important;
+    }
+    .testi p {
+        font-size: 1.3rem !important;
+    }
+    .about-section h2 {
+        font-size: 30px;
+    }
+    #faq .desk {
+        font-size: 1.6rem !important;
+    }
+    .faq-image {
+        height: 5rem;
+    }
+     .imageheader {
+        width: 400px;
+        overflow: hidden;
+    }
+        .paddingkungkang {
+            margin-top: -70px !important;
+        }
+}
+
+@media (min-width: 992px) {
+    .navbar-dark {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: transparent !important;
+    }
+    .fixed-top {
+        position: fixed;
+        background-color: #FEA116 !important;
+    }
+    .paddingkungkang {
+        padding: 0px 50px;
+    }
+    .hero-header {
+        padding: 3rem 0;
+    }
+}
+
+@media (min-width: 1281px) {
+    .imageheader {
+        height: 30rem !important;
+    }
+    .paddingkungkang {
+        padding: 0px 100px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-dark {
+        background-color: #565f6b;
+        position: relative;
+    }
+    .navbar-dark .navbar-collapse {
+        margin-top: 15px;
+        background-color: #565f6b;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .navbar-dark .navbar-nav .nav-link,
+    .sticky-top.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        margin-left: 0;
+    }
+    .navbar-dark .navbar-brand img {
+        max-height: 45px;
+    }
+}
+
+    </style>
+    <script>
+         document.addEventListener('DOMContentLoaded', function () {
+                var navbar = document.querySelector('.navbar');
+                var sticky = navbar.offsetTop;
+
+                console.log('Navbar offsetTop:', sticky);
+
+                window.onscroll = function () {
+                    console.log('Current pageYOffset:', window.pageYOffset);
+                    if (window.pageYOffset > sticky) {
+                        navbar.classList.add('fixed-top');
+                    } else {
+                        navbar.classList.remove('fixed-top');
+                    }
+                };
+            });
+            
+ document.addEventListener("DOMContentLoaded", function() {
+        var readMoreBtn = document.getElementById("read-more-btn");
+        var moreText = document.getElementById("more-text");
+
+        readMoreBtn.addEventListener("click", function(event) {
+            event.preventDefault();
+
+            if (moreText.classList.contains("d-none")) {
+                moreText.classList.remove("d-none");
+                readMoreBtn.textContent = "Read Less";
+            } else {
+                moreText.classList.add("d-none");
+                readMoreBtn.textContent = "Read More";
+            }
+        });
+    });
+   window.onload = function () {
+        var splashScreen = document.getElementById("splash-screen");
+        splashScreen.classList.add("hidden");
+      };
+    </script>
+    <div id="splash-screen" class="d-flex justify-content-center align-items-center">
+      <div class="" role="status" style="width: 35em; height: 35rem;">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
+      <img class="z-3 position-absolute" src="assets/logo.png" alt="Logo" style="max-width: 30rem;">
+    </div>
+    <div class="container-fluid position-relative p-0 navbor">
+        <nav class="navbar navbar-expand-lg navbar-dark px-4 px-lg-5 py-3 py-lg-0">
+            <div class="container-fluid">
+                <a href="" class="navbar-brand p-0">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="#about" class="navbar-item nav-link">About</a>
+                        <a href="#menu" class="navbar-item nav-link">Menu</a>
+                        <a href="#testi" class="navbar-item nav-link">Testimonial</a>
+                        <a href="#faq" class="navbar-item nav-link">FAQ</a>
+                        <a href="#kontak" class="navbar-item nav-link">Kontak</a>
+                    </div>
+                    <form class="d-flex ms-auto">
+                        <input class="form-control me-1 bg-light border" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var navbar = document.querySelector('.navbar');
+                var sticky = navbar.offsetTop;
+
+                console.log('Navbar offsetTop:', sticky);
+
+                window.onscroll = function () {
+                    console.log('Current pageYOffset:', window.pageYOffset);
+                    if (window.pageYOffset > sticky) {
+                        navbar.classList.add('fixed-top');
+                    } else {
+                        navbar.classList.remove('fixed-top');
+                    }
+                };
+            });
+        </script>
+    </div>
+    <div class="hero-header" id="home">
+        <div class="container-fluid py-5">
+            <div class="row align-items-center g-5 paddingkungkang">
+                <div class="col-lg-6 order-lg-1 order-2 p-0">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-12 text-center text-lg-start">
+                                        <h1 class="display-3">
+                                            <span class="highlight">GYMMUSCLE</span><br>TEMAN OTOTMU
+                                        </h1>
+                                        <p class="text-white mb-4 pb-2">
+                                            Rasakan toto otot kalian meronta ronta dengan perubahannya
+                                      </p>
+                                        <a href="#kontak" class="btn btn-primary py-sm-3 px-sm-5 me-3">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-12 text-center text-lg-start">
+                                        <h1 class="display-3">
+                                            <span class="highlight">Pilihan Menu</span><br>Lainnya
+                                        </h1>
+                                        <p class="text-white mb-4 pb-2">
+                                            Gamau ngerain beban? Tenang kita banyak menu latihan lainnya
+                                        </p>
+                                        <a href="#menu" class="btn btn-primary py-sm-3 px-sm-5 me-3">alat Lainnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-12 text-center text-lg-start">
+                                        <h1 class="display-3">
+                                            <span class="highlight">how</span><br>how
+                                        </h1>
+                                        <p class="text-white mb-4 pb-2">
+                                            how
+                                        </p>
+                                        <a href="#kontak" class="btn btn-primary py-sm-3 px-sm-5 me-3">Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 text-center text-lg-end overflow-hidden p-0">
+                    <img class="img-fluid imageheader" src="assets/menuhead.png" alt="Menu Header">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <!-- About Start -->
+<div class="parallax">
+    <div style="padding-top:50px;">
+        
+    </div>
+    <div class="container-xxl py-5 container-relative" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-center konten">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-100" data-aos="zoom-in-right" data-aos-duration="1000" src="assets/list1-menu2.jpg">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-75" data-aos="zoom-in-left" data-aos-duration="1000" src="assets/list2-menu1.jpg" style="margin-top: 25%;">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-75" data-aos="zoom-in-right" data-aos-duration="1000" src="assets/list2-menu2.jpg">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-100" data-aos="zoom-in-left" data-aos-duration="1000" src="assets/list1-menu1.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 about-us" data-aos="fade-up">
+                    <h1 class="display-5 mb-4" style="padding-bottom:10px">Tentang Kami<span class="text-primary"></span></h1>
+                    <h3 class="" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">Apasih <img src="assets/logo.png" alt="Seru Eat" style="width: 6rem" /> Itu?</h3>
+                    <div class="desk">
+                        <p class="mb-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1250">hon.</p>
+
+                    <p id="more-text" class="d-none mb-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">how</p>
+                    
+                    </div>
+                    <a id="read-more-btn" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500" class="btn btn-primary py-3 px-5 mt-2 btn-outline-warning" href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Start -->
+    <div class="container-xxl py-5 container-relative">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-right" data-aos-duration="1000">
+                    <div class="service-item rounded shadow-sm p-4 text-center">
+                        <div class="mb-4">
+                            <i class="fa fa-3x fa-bullhorn text-primary"></i>
+                        </div>
+                        <h5>Pengumuman</h5>
+                        <p>Promo Free Es Teh Periode 25 Juli - 17 Agustus 2024</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="service-item rounded shadow-sm p-4 text-center">
+                        <div class="mb-4">
+                            <i class="fa fa-3x fa-map text-primary"></i>
+                        </div>
+                        <h5>Lokasi</h5>
+                        <p>Jalan Minakh Mentekhi Nomor 34, Pesawaran, Lampung</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12" data-aos="zoom-in-left" data-aos-duration="1000">
+                    <div class="service-item rounded shadow-sm p-4 text-center">
+                        <div class="mb-4">
+                            <i class="fa fa-3x fa-headset text-primary"></i>
+                        </div>
+                        <h5>Pesan Online</h5>
+                        <p>Dapat di pesan di GoFood / Hubungi 0856-6953-0929</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+</div>
+
+<!-- Menu Shop Start-->
+<div class="container-fluid menu py-5 bg-gradient" id="menu">
+    <div class="container py-5">
+        <div class="tab-class text-center">
+            <div class="text-center mb-4" data-aos="zoom-in" >
+                <h1>Pilihan Menu Kami</h1>
+            </div>
+            <div class="text-center mb-5" data-aos="zoom-in" >
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-danger bg-light rounded-pill me-2 border border-warning" data-bs-toggle="pill" href="#tab-0">
+                            All Menu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger bg-light rounded-pill me-2 active border border-warning" data-bs-toggle="pill" href="#tab-1">
+                            Main Course
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger bg-light rounded-pill me-2 border border-warning" data-bs-toggle="pill" href="#tab-2">
+                            Side Dish
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger bg-light rounded-pill me-2 border border-warning" data-bs-toggle="pill" href="#tab-3">
+                            Drinks
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger bg-light rounded-pill me-2 border border-warning" data-bs-toggle="pill" href="#tab-4">
+                            Others
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-content" data-aos="zoom-in">
+    <div id="tab-0" class="tab-pane fade show p-0">
+    <div class="row g-4">
+        <div class="col-lg-12">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item border border-warning border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list1-menu1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-warning px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Main Course</div>
+                        <div class="p-4">
+                            <h4>Ayam Bakar</h4>
+                            <p>1 Potong ayam bakar dengan bumbu special, memiliki rasa pedas manis serta gurih</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 15.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item border border-warning border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list1-menu2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-warning px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Main Course</div>
+                        <div class="p-4">
+                            <h4>Seruit Gurami</h4>
+                            <p>1 Ekor Ikan Gurami berat 500Gram dengan sambal seruit khas lampung</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 45.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item border border-warning border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list1-menu3.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-warning px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Main Course</div>
+                        <div class="p-4">
+                            <h4>Ayam Goreng</h4>
+                            <p>1 Potong Ayam Goreng dengan sambal seruit/sambal bawang, Memiliki rasa gurih dan juicy</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 15.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item border border-warning border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list1-menu4.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-warning px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Main Course</div>
+                        <div class="p-4">
+                            <h4>Seruit Ikan Laut</h4>
+                            <p>Seruit Ikan Laut ( tongkol / kembung / kerisi ) dengan sambal seruit khas lampung</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 45.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item2 border border-danger border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list2-menu1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-danger px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Side Dish</div>
+                        <div class="p-4">
+                            <h4>Sayur Asem</h4>
+                            <p>Sayur Asem Khas Lampung, Memiliki cita rasa yang asam (tidak manis)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 6.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item2 border border-danger border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list2-menu2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-danger px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Side Dish</div>
+                        <div class="p-4">
+                            <h4>Sambel Seruit</h4>
+                            <p>1 Porsi Sambal Seruit khas lampung, memiliki cita rasa pedas, asam, segar</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 4.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item2 border border-danger border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list2-menu3.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-danger px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Side Dish</div>
+                        <div class="p-4">
+                            <h4>Tahu Tempe</h4>
+                            <p>1 porsi berisi 2 tahu dan 2 tempe yang digoreng dadakan dijamin mantap</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 5.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item2 border border-danger border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list2-menu4.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-danger px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Side Dish</div>
+                        <div class="p-4">
+                            <h4>Lalapan Rebus</h4>
+                            <p>1 porsi lalapan yang sudah di rebus (Terong Bulat, Wortel, Labu siam Dll.)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 6.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item3 border border-success border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list3-menu1.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Drink</div>
+                        <div class="p-4">
+                            <h4>Es Teh</h4>
+                            <p>Es teh manis (bisa request tanpa gula atau mau teh anget)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 4.000 / Gelas</p>
+                            <p class="text-center">⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item3 border border-success border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list3-menu2.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Drink</div>
+                        <div class="p-4">
+                            <h4>Air Mineral</h4>
+                            <p>Air Mineral (Bisa request pakai es +1000 dan dapat di pesan di keadaan tidak dingin/dingin)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 7.000 / Gelas</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item3 border border-success border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list3-menu3.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Drink</div>
+                        <div class="p-4">
+                            <h4>Es Jeruk</h4>
+                            <p>Es Jeruk Peras asli ( Dapat disajikan panas ataupun dingin)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 5.000 / Gelas</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item3 border border-success border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list3-menu4.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Drink</div>
+                        <div class="p-4">
+                            <h4>Teh Botol Sosro</h4>
+                            <p>Teh Botol Sosro (Bisa request pakai es +1000 dan dapat di pesan di keadaan tidak dingin/dingin)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 5.000 / Gelas</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="rounded position-relative menu-item4 border border-secondary border-top-0 rounded-bottom">
+        <div class="menu-img">
+            <img src="assets/list4-menu1.png" class="img-fluid w-100 rounded-top" alt="">
+        </div>
+        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Others</div>
+        <div class="p-4">
+            <h4>Nasi Putih</h4>
+            <p>Nasi putih pulen yang disajikan hangat.</p>
+            <p class="fs-5 fw-bold mb-0">Rp. 5.000 / Porsi</p>
+            <p class="text-center">⭐⭐⭐⭐✰</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="rounded position-relative menu-item4 border border-secondary border-top-0 rounded-bottom">
+        <div class="menu-img">
+            <img src="assets/list4-menu2.png" class="img-fluid w-100 rounded-top" alt="">
+        </div>
+        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Others</div>
+        <div class="p-4">
+            <h4>Nasi Uduk</h4>
+            <p>Nasi uduk dengan taburan bawang goreng.</p>
+            <p class="fs-5 fw-bold mb-0">Rp. 7.000 / Porsi</p>
+            <p class="text-center">⭐⭐⭐⭐✰</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="rounded position-relative menu-item4 border border-secondary border-top-0 rounded-bottom">
+        <div class="menu-img">
+            <img src="assets/list4-menu3.png" class="img-fluid w-100 rounded-top" alt="">
+        </div>
+        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Others</div>
+        <div class="p-4">
+            <h4>Emping</h4>
+            <p>Emping melinjo renyah dan gurih.</p>
+            <p class="fs-5 fw-bold mb-0">Rp. 4.000 / Porsi</p>
+            <p class="text-center">⭐⭐⭐⭐✰</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="rounded position-relative menu-item4 border border-secondary border-top-0 rounded-bottom">
+        <div class="menu-img">
+            <img src="assets/list4-menu4.png" class="img-fluid w-100 rounded-top" alt="">
+        </div>
+        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Others</div>
+        <div class="p-4">
+            <h4>Kerupuk Kulit</h4>
+            <p>Kerupuk kulit sapi yang renyah dan gurih.</p>
+            <p class="fs-5 fw-bold mb-0">Rp. 5.000 / Porsi</p>
+            <p class="text-center">⭐⭐⭐⭐✰</p>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+  y  </div>
+</div>
+<div id="tab-1" class="tab-pane fade show p-0 active">
+    <div class="row g-4">
+        <div class="col-lg-12">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item border border-warning border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list1-menu1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-warning px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Main Course</div>
+                        <div class="p-4">
+                            <h4>Ayam Bakar</h4>
+                            <p>1 Potong ayam bakar dengan bumbu special, memiliki rasa pedas manis serta gurih</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 15.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item border border-warning border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list1-menu2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-warning px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Main Course</div>
+                        <div class="p-4">
+                            <h4>Seruit Gurami</h4>
+                            <p>1 Ekor Ikan Gurami berat 500Gram dengan sambal seruit khas lampung</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 45.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item border border-warning border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list1-menu3.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-warning px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Main Course</div>
+                        <div class="p-4">
+                            <h4>Ayam Goreng</h4>
+                            <p>1 Potong Ayam Goreng dengan sambal seruit/sambal bawang, Memiliki rasa gurih dan juicy</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 15.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item border border-warning border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list1-menu4.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-warning px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Main Course</div>
+                        <div class="p-4">
+                            <h4>Seruit Ikan Laut</h4>
+                            <p>Seruit Ikan Laut ( tongkol / kembung / kerisi ) dengan sambal seruit khas lampung</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 45.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="tab-2" class="tab-pane fade show p-0">
+    <div class="row g-4">
+        <div class="col-lg-12">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item2 border border-danger border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list2-menu1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-danger px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Side Dish</div>
+                        <div class="p-4">
+                            <h4>Sayur Asem</h4>
+                            <p>Sayur Asem Khas Lampung, Memiliki cita rasa yang asam (tidak manis)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 6.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item2 border border-danger border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list2-menu2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-danger px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Side Dish</div>
+                        <div class="p-4">
+                            <h4>Sambel Seruit</h4>
+                            <p>1 Porsi Sambal Seruit khas lampung, memiliki cita rasa pedas, asam, segar</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 4.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item2 border border-danger border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list2-menu3.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-danger px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Side Dish</div>
+                        <div class="p-4">
+                            <h4>Tahu Tempe</h4>
+                            <p>1 porsi berisi 2 tahu dan 2 tempe yang digoreng dadakan dijamin mantap</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 5.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item2 border border-danger border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list2-menu4.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-danger px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Side Dish</div>
+                        <div class="p-4">
+                            <h4>Lalapan Rebus</h4>
+                            <p>1 porsi lalapan yang sudah di rebus (Terong Bulat, Wortel, Labu siam Dll.)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 6.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="tab-3" class="tab-pane fade show p-0">
+    <div class="row g-4">
+        <div class="col-lg-12">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item3 border border-success border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list3-menu1.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Drink</div>
+                        <div class="p-4">
+                            <h4>Es Teh</h4>
+                            <p>Es teh manis (bisa request tanpa gula atau mau teh anget)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 4.000 / Gelas</p>
+                            <p class="text-center">⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item3 border border-success border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list3-menu2.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Drink</div>
+                        <div class="p-4">
+                            <h4>Air Mineral</h4>
+                            <p>Air Mineral (Bisa request pakai es +1000 dan dapat di pesan di keadaan tidak dingin/dingin)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 7.000 / Gelas</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item3 border border-success border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list3-menu3.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Drink</div>
+                        <div class="p-4">
+                            <h4>Es Jeruk</h4>
+                            <p>Es Jeruk Peras asli ( Dapat disajikan panas ataupun dingin)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 5.000 / Gelas</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item3 border border-success border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list3-menu4.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Drink</div>
+                        <div class="p-4">
+                            <h4>Teh Botol Sosro</h4>
+                            <p>Teh Botol Sosro (Bisa request pakai es +1000 dan dapat di pesan di keadaan tidak dingin/dingin)</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 5.000 / Gelas</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="tab-4" class="tab-pane fade show p-0">
+    <div class="row g-4">
+        <div class="col-lg-12">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item4 border border-secondary border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list4-menu1.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Others</div>
+                        <div class="p-4">
+                            <h4>Nasi Putih</h4>
+                            <p>Nasi putih pulen yang disajikan hangat.</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 5.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item4 border border-secondary border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list4-menu2.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Others</div>
+                        <div class="p-4">
+                            <h4>Nasi Uduk</h4>
+                            <p>Nasi uduk dengan taburan bawang goreng.</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 7.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item4 border border-secondary border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list4-menu3.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Others</div>
+                        <div class="p-4">
+                            <h4>Emping</h4>
+                            <p>Emping melinjo renyah dan gurih.</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 4.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative menu-item4 border border-secondary border-top-0 rounded-bottom">
+                        <div class="menu-img">
+                            <img src="assets/list4-menu4.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Others</div>
+                        <div class="p-4">
+                            <h4>Kerupuk Kulit</h4>
+                            <p>Kerupuk kulit sapi yang renyah dan gurih.</p>
+                            <p class="fs-5 fw-bold mb-0">Rp. 5.000 / Porsi</p>
+                            <p class="text-center">⭐⭐⭐⭐✰</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="parallax">
+<div class="testi container-xxl container-relative" id="testi">
+    <div class="container-xxl py-5 bg-abstrack testibor border border-warning" data-aos="zoom-in-up" data-aos-duration="1000">
+        <h1 class="mb-4 text-center ">Testimonial</h1>
+    <p class="mb-4 text-center desk" style="padding-bottom: 50px; color: #FEA116;"> <B>Apa pendapat mereka tentang <img src="assets/logo.png" alt="SeruEat" style="width: 100px;"></B></p>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-12 text-center">
+                                    <div class="testimonial-item">
+                                        <img src="assets/cust1.png" alt="Customer 1" class="testimonial-image">
+                                        <p class="testimonial-text">
+                                            "Harganya terjangkau, rasanya mantap, cocok buat makan bareng keluarga, sambel seruitnya seger banget, kebetulan istri saya orang lampung dan dia suka"
+                                        </p>
+                                        <h5 class="testimonial-author">how</h5>
+                                        <p class="testimonial-position">how</p>
+                                        <div class="testimonial-rating">
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-12 text-center">
+                                    <div class="testimonial-item">
+                                        <img src="assets/cust3.jpg" alt="Customer 2" class="testimonial-image">
+                                        <p class="testimonial-text">
+                                            "Saya baru pertama kali coba makanan ini sih, dari frist impresion saya baik! Makanannya masih anget, rasanya enak ga terlalu asin, karena saya kurang suka yang asin asin."
+                                        </p>
+                                        <h5 class="testimonial-author">Ara</h5>
+                                        <p class="testimonial-position">Mahasiswa</p>
+                                        <div class="testimonial-rating">
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9734;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-12 text-center">
+                                    <div class="testimonial-item">
+                                        <img src="assets/cust4.png" alt="Customer 3" class="testimonial-image">
+                                        <p class="testimonial-text">
+                                            "Saya kesini karena keperluan untuk melakukan riset pada UMKM ini, sebelumnya saya udah pernah nyobain dan rasanya cocok di lidah saya."
+                                        </p>
+                                        <h5 class="testimonial-author">how</h5>
+                                        <p class="testimonial-position">Pelajar</p>
+                                        <div class="testimonial-rating">
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-12 text-center">
+                                    <div class="testimonial-item">
+                                        <img src="assets/cust2.png" alt="Customer 4" class="testimonial-image">
+                                        <p class="testimonial-text">
+                                            "Tempat ini selalu menjadi pilihan saya untuk makan siang. Pelayanan yang ramah dan suasana yang nyaman, buat pelajar ini cocok sih harganya lumayan bersahabat di kantong anak muda, es jeruknya juara asem seger manis."
+                                        </p>
+                                        <h5 class="testimonial-author">Linda Kartika</h5>
+                                        <p class="testimonial-position">Pelajar</p>
+                                        <div class="testimonial-rating">
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid bg-gradient" style="padding:50px 0">
+<div class="container my-5" id="faq" data-aos="zoom-in" data-aos-duration="500" style="padding-top: 50px;">
+    <h1 class="mb-4 text-center">Frequently Asked Questions</h1>
+    <p class="mb-4 text-center desk" style="padding-bottom: 50px; color: #FEA116;"> <B>Beberapa Pertanyaan Yang Sering Ditanyakan Oleh Costumer</B></p>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="assets/faqgif.gif" alt="FAQ Image" class="img-fluid faq-image" style="max-height: 300px;">
+        </div>
+        <div class="col-md-8">
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <i class="fas fa-question-circle me-2 accordion-icon"></i> Bagaimana Cara Pesan?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Kamu Dapat Memesan <b>Seru Eat</b> melalui Gojek, atau kunjungi gerai kami ya.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fas fa-question-circle me-2 accordion-icon"></i> Apakah Makanannya Halal?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Jangan Khawatir, kami dapat memastikan bahwa produk yang kami jual <b>100% Halal</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fas fa-question-circle me-2 accordion-icon"></i> Apa itu seruit?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Seruit adalah hidangan ikan panggang atau bakar khas Lampung yang disajikan dengan sambal pedas dan asam, yang dimana ciri khasnya menggunakan rampai (tomat kecil yang memiliki rasa asam menyengat).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fas fa-question-circle me-2 accordion-icon"></i> Kapan Berdiri?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <b>SeruEat</b> berdiri Sejak 2021.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="parallax">
+<div class="container-fluid container-relative" style="padding:50px 0">
+<div class="container py-5 about-section border border-warning rounded bg-abstrack" id="kontak" data-aos="zoom-in" data-aos-duration="500">
+    <div class="row">
+        <h1 class="mb-4 text-center" style="padding-bottom: 20px; color:orangered;">Kontak Kami</h1>
+        <div class="col-lg-8 text-center" style="padding-bottom: 50px;">
+            <div class="map-container border border-warning rounded">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.461220287069!2d105.24546091222699!3d-5.498316854716537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40d848bac2ab47%3A0xea33eeee57ce9214!2sJl.%20Minakh%20Mentekhi%20No.34%2C%20Sukajaya%20Lempasing%2C%20Kec.%20Padang%20Cermin%2C%20Kabupaten%20Pesawaran%2C%20Lampung%2035236!5e0!3m2!1sid!2sid!4v1722056335637!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <div class="row">
+                <div class="col-md-6 col-lg-12 text-center">
+                    <h2 class="text-center" style="padding-bottom: 20px;">Alamat Kami</h2>
+                    <h3>Lampung, Indonesia</h3>
+                    <p><b>Jalan Minakh Mentekhi No.34</b></p>
+                    <p>Kecamatan, Padang Cermin</p>
+                    <p>Provinsi, Lampung</p>
+                    <p>Telepon: +62 856-6953-0929</p>
+                </div>
+                <div class="col-md-6 col-lg-12 text-center">
+                    <h2 class="text-center">Jam Operasional</h2>
+                    <h3>Senin-Sabtu</h3>
+                    <p>07:00 WIB - 20:00 WIB</p>
+                    <h3>Minggu</h3>
+                    <p class="text-danger">Closed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<footer id="footer" class="text-center text-lg-start">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+            <span>Temukan Kami Di Platform Media Sosial:</span>
+        </div>
+        
+        <div>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <img src="assets/logo.gif" alt="SeruEat" style="max-width: 150px;">
+                    </h6>
+                    <p><b>SeruEat</b> Adalah restoran UMKM yang berada di lampung dengan produk andalannya adalah seruit, makanan khas lampung.</p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                    <p><i class="fas fa-home me-3"></i>Jalan Minakh Mentekhi No.34 Pesawaran, Lampung</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        ventinitygt@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> +62 856 6953 0929</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Jam Operasional
+                    </h6>
+                    <p><b>Senin - Sabtu</b></p>
+                    <p>07:00 - 20:00 WIB</p>
+                    <P><B>Minggu</B></P>
+                    <p>LIBUR</p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Navigasi 
+                    </h6>
+                    <p>
+                        <a href="#home" class="text-reset">Home</a>
+                    </p>
+                    <p>
+                        <a href="#about" class="text-reset">About Us</a>
+                    </p>
+                    <p>
+                        <a href="#menu" class="text-reset">Menu</a>
+                    </p>
+                    <p>
+                        <a href="#testi" class="text-reset">Testimony</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-center p-4 copyright" style="background-color: rgba(0, 0, 0, 0.05);">
+        <a class="text-reset fw-bold " style="font-size: 18px;" href="https://gamelab.com/">Reversed By <span style="color: orangered;">how</span> Powered By <span style="color: orangered;">how</span></a>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+<script>
+    AOS.init();
+</script>
+</html>
